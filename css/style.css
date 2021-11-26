@@ -5,13 +5,14 @@
   padding: 0;
   box-sizing: inherit; }
 
-html, body {
+body {
   box-sizing: border-box;
   font-family: "Outfit";
   font-weight: 400;
   font-size: 18px;
   background-color: #0d192b;
   display: grid;
+  align-items: center;
   justify-content: center; }
 
 .heading-1 {
@@ -26,5 +27,13 @@ html, body {
   .attribution a {
     color: #3e52a3; }
 
-.nft-component-card {
-  background-color: #14253d; }
+.card {
+  width: 375px;
+  padding: 1.5rem;
+  margin: 4rem auto 1.5rem;
+  background-color: #14253d;
+  border-radius: 1rem; }
+
+.component-img {
+  width: 100%;
+  border-radius: 1rem; }

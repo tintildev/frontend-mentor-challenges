@@ -1,0 +1,15 @@
+.card{
+    width: $width-mobile;
+    padding: 1.5rem;
+    margin: 4rem auto 1.5rem;
+    background-color: $color-card;
+    border-radius: 1rem;
+}
+
+.component {
+
+    &-img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+}

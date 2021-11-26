@@ -1,0 +1,16 @@
+.heading-1 {
+    font-family: $font-primary;
+    //font-size: 4.5rem;
+    color: $color-white;
+    font-weight: $font-weight-bold;
+    line-height: 1;
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+  
+    & a{
+      color: hsl(228, 45%, 44%);
+    }
+  }
+

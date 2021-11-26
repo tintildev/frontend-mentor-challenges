@@ -1,3 +1,28 @@
+//////// COLOR VARIABLES
+
+// Primary
+$color-primary: hsl(215, 51%, 70%);
+$color-primary-light: hsl(178, 100%, 50%);
+
+//Neutral
+$color-bg: hsl(217, 54%, 11%);
+$color-card:  hsl(216, 50%, 16%);
+$color-line: hsl(215, 32%, 27%);
+
+$color-white: hsl(0, 0%, 100%);
+
+// LAYOUT
+$width-desktop: 1440px; 
+$width-mobile: 375px;
+
+// FONT VARIABLES
+$font-primary: 'Outfit';
+$font-size-primary: 18px;
+
+$font-weight-light: 300;
+$font-weight-primary: 400;
+$font-weight-bold: 600;
+
 //basic
 
 *,
@@ -8,6 +33,19 @@
     box-sizing: inherit;
 }
 
-html{
+body{
   box-sizing: border-box;
+  font-family: $font-primary;
+  font-weight: $font-weight-primary;
+  font-size: $font-size-primary;
+  background-color: $color-bg;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
+
+
+
+
+
+
