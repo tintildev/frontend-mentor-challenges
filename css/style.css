@@ -11,9 +11,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   background-color: #0d192b;
-  display: grid;
+  display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  height: 100vh; }
 
 .heading-1 {
   font-family: "Outfit";
@@ -29,6 +32,7 @@ body {
 
 .card {
   width: 375px;
+  height: auto;
   padding: 1.5rem;
   margin: 4rem auto 1.5rem;
   background-color: #14253d;

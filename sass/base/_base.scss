@@ -39,10 +39,15 @@ body{
   font-weight: $font-weight-primary;
   font-size: $font-size-primary;
   background-color: $color-bg;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  height: 100vh;
 }
+
+
 
 
 
