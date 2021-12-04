@@ -23,7 +23,7 @@
 ### Links
 
 - Solution URL: [Here is my solution](https://github.com/mklestil/nft-preview-card-component)
-- Live Site URL: [Here is my live solution](https://mklestil.github.io/NFT-preview-card/)
+- Live Site URL: [Here is my live solution](https://mklestil.github.io/nft-preview-card-component/)
 
 ### Built with
 
