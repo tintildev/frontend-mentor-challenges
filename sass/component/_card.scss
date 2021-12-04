@@ -9,7 +9,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, min-content);
     grid-row-gap: 1rem;
-    box-shadow: 1rem $color-bg;
+    box-shadow: 0 1.5rem 4rem rgba(black, .40);
+
+
+
+    @media only screen and (max-width: $width-mobile){
+        width: 90vw;
+    }
 
     &__viewContainer{
         opacity: 0;
@@ -66,6 +72,10 @@
         color: $color-primary;
         grid-column: 1 / 4;
         grid-row: 3 / 4;
+
+        &--creation{
+            padding-left: 1rem;
+        }
     }
     &__value{
         color: $color-primary-light;
