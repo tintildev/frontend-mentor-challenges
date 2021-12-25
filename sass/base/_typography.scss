@@ -1,0 +1,47 @@
+.heading-1 {
+    font-family: $font-primary;
+    font-size: $font-size-h1;
+    color: $color-white;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+    text-align: center;
+
+    @media only screen and (min-width: 650px){
+      font-size: $font-size-h1-desktop;
+      text-align: left;
+    }
+}
+
+.heading-2 {
+  font-size: $font-size-h2;
+  font-family: $font-primary;
+  color: $color-white;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  text-align: center;
+
+  @media only screen and (min-width: 650px){
+    text-align: left;
+  }
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+  color: $color-white;
+  & a{
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+p{
+  color: $color-paragraph-white;
+  font-family: $font-secound;
+  font-size: $font-size-default;
+}
+
+
+
+
+

@@ -1,0 +1,70 @@
+//////// COLOR VARIABLES
+
+//Neutral
+$color-main-bg: hsl(233, 47%, 7%);
+$color-card-bg:  hsl(244, 38%, 16%);
+$color-accent: hsl(277, 64%, 61%);
+$color-img: rgba(99,9,155,0.65);
+
+
+$color-white: hsl(0, 0%, 100%);
+$color-paragraph-white: hsla(0, 0%, 100%, 0.75);
+$color-value-white: hsla(0, 0%, 100%, 0.6);
+
+// LAYOUT
+$width-desktop: 1440px; 
+$width-mobile: 375px;
+
+
+// FONT VARIABLES
+$font-size-default: 1.4rem;
+$font-size-big: 1.6rem;
+$font-size-h1: 2.6rem;
+$font-size-h2: 2rem;
+$font-size-h1-desktop: 4rem;
+
+$font-weight-light: 300;
+$font-weight-primary: 400;
+$font-weight-bold: 700;
+
+$font-primary: Inter;
+$font-secound: Lexend Deca;
+
+//basic
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  box-sizing: border-box;
+  background-color: $color-main-bg;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 2rem;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+@keyframes textColor {
+  0% {
+      color: $color-white;
+  }
+
+  100% {
+      color: $color-accent;
+  }
+}
+
+@keyframes divFly {
+  0% {
+      opacity: 0;
+      transform: translateY(2rem);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateY(1rem);
+}
+
+  100% {
+      opacity: 1;
+      transform: translateY(0rem);
+  }
+}
