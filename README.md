@@ -48,8 +48,8 @@ I have learned to create the optimal layout with Flexbox depending on the screen
 - Mobile-first workflow
 
 ### Useful resources
-[w3schools CSS animations](https://www.w3schools.com/css/css3_animations.asp)
-[codepen color animation](https://codepen.io/Adrw4/pen/jLgGGK)
+- [w3schools CSS animations](https://www.w3schools.com/css/css3_animations.asp)
+- [codepen color animation](https://codepen.io/Adrw4/pen/jLgGGK)
 
 ## Author
 
