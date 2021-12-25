@@ -22,10 +22,10 @@
 
 ### Screenshot
 
-Mobile
+#### Mobile
 ![](./images/screenshot-mobile.png)
 
-Desktop
+#### Desktop
 ![](./images/screenshot-desktop.png)
 
 
