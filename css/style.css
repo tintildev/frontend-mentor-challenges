@@ -162,12 +162,3 @@ p {
 .card__valueDiv {
   text-align: center;
   padding-bottom: 10%; }
-
-.card__valueDiv--1 {
-  animation: divFly 2s linear 1s backwards; }
-
-.card__valueDiv--2 {
-  animation: divFly 2s linear 1.6s backwards; }
-
-.card__valueDiv--3 {
-  animation: divFly 2s linear 2s backwards; }
