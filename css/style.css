@@ -50,7 +50,7 @@ footer {
 
 @media only screen and (min-width: 650px) {
   .heading-1 {
-    font-size: 4rem;
+    font-size: 4vh;
     text-align: left; } }
 
 .heading-2 {
