@@ -33,7 +33,7 @@
 
   &__link{
     color: $color-accent;
-    //animation: textColor 2s linear;
+    animation: textColor 1.2s linear;
   }
 
   &__center{
@@ -90,7 +90,19 @@
     text-align: center;
     padding-bottom: 10%;
 
-    
+    @media only screen and (min-width: 650px){
+      &--1{
+        animation: divFly 2s linear 1s backwards;
+      }
+  
+      &--2{
+        animation: divFly 2s linear 1.6s backwards;
+      }
+  
+      &--3{
+        animation: divFly 2s linear 2s backwards;
+      }
+    }
     
   }
 

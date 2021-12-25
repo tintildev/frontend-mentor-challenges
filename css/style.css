@@ -111,7 +111,8 @@ p {
     height: 45vh; } }
 
 .card__link {
-  color: #aa5cdb; }
+  color: #aa5cdb;
+  animation: textColor 1.2s linear; }
 
 .card__center {
   width: 85vw;
@@ -162,3 +163,11 @@ p {
 .card__valueDiv {
   text-align: center;
   padding-bottom: 10%; }
+
+@media only screen and (min-width: 650px) {
+  .card__valueDiv--1 {
+    animation: divFly 2s linear 1s backwards; }
+  .card__valueDiv--2 {
+    animation: divFly 2s linear 1.6s backwards; }
+  .card__valueDiv--3 {
+    animation: divFly 2s linear 2s backwards; } }
