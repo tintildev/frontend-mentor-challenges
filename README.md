@@ -31,7 +31,7 @@
 
 ### Links
 
-- Solution URL: [Here is my solution](https://github.com/mklestil/stats-preview-card-component)
+- Solution URL: [Here is my solution](https://mklestil.github.io/stats-preview-card-component/)
 - Live Site URL: [Here is my live solution](https://mklestil.github.io/stats-preview-card-component/)
 
 ## My process
