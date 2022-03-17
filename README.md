@@ -56,3 +56,4 @@ I have learned to create the optimal layout with Flexbox depending on the screen
 - Website - [Martin Klestil](https://github.com/mklestil)
 - Frontend Mentor - [@mklestil](https://www.frontendmentor.io/profile/mklestil)
 - Twitter - [@mklestil](https://twitter.com/MKlestil)
+- LinkedIn - [Martin Klestil](https://www.linkedin.com/in/martin-klestil/)
