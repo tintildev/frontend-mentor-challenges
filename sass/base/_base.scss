@@ -1,0 +1,60 @@
+//////// COLOR VARIABLES
+
+// Primary
+
+$color-soft-red: hsl(7, 99%, 70%);
+$color-yellow: hsl(51, 100%, 49%);
+$color-dark-cyan: hsl(167, 40%, 24%);
+$color-dark-blue:  hsl(198, 62%, 26%);
+$color-moderate-cyan: hsl(168, 34%, 41%);
+
+//Neutral
+$color-dark-desaturated-blue: hsl(212, 27%, 19%);
+$color-very-dark-grayish-blue: hsl(213, 9%, 39%);
+$color-dark-grayish-blue: hsl(232, 10%, 55%);
+$color-grayish-blue: hsl(210, 4%, 67%);
+$color-white: hsl(0, 0%, 100%);
+
+// LAYOUT
+$width-desktop: 1440px; 
+$width-mobile: 375px;
+
+// FONT VARIABLES
+$font-Barlow: 'Barlow';
+$font-size-primary: 18px;
+$font-Fraunces: 'Fraunces';
+
+//basic
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: $font-Barlow;
+  font-size: $font-size-primary;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+header{
+  grid-row: 1;
+  grid-column: 1/-1;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+h1{
+    font-family: $font-Fraunces;
+    font-size: 22px;
+    color: $color-white;
+    line-height: 1;
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+  & a{
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+
+
