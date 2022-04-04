@@ -42,13 +42,11 @@ body{
 
 .container{
   display: grid;
+  grid-template-rows: 100vh;
   grid-template-columns: repeat(4, 1fr);
 }
 
-header{
-  grid-row: 1;
-  grid-column: 1/-1;
-}
+
 
 
 
