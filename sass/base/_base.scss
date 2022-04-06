@@ -42,7 +42,7 @@ body{
 
 .container{
   display: grid;
-  grid-template-rows: 100vh;
+  grid-template-rows: 100vh 50vh 50vh;
   grid-template-columns: repeat(4, 1fr);
 }
 
