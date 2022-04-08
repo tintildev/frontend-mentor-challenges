@@ -7,27 +7,31 @@
 
 body {
   box-sizing: border-box;
-  font-family: "Barlow";
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: 'Lexend Deca', 'Barlow', sans-serif; }
 
 .container {
   display: grid;
-  grid-template-rows: 100vh 50vh 50vh;
-  grid-template-columns: repeat(4, 1fr); }
+  grid-template-rows: 90vh 50vh 50vh;
+  grid-template-columns: repeat(4, 25vw); }
 
 h1 {
-  font-family: "Fraunces";
-  font-size: 22px;
+  font-family: "Lexend Deca";
+  font-size: 2.8rem;
   color: white;
   line-height: 1;
   font-weight: 900;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .attribution {
   font-size: 11px;
   text-align: center; }
   .attribution a {
     color: #3e52a3; }
+
+p {
+  font-family: "Barlow"; }
 
 header {
   grid-row: 1;
@@ -63,7 +67,8 @@ header {
   height: 100%; }
   .box__hero {
     background-image: url(../images/mobile/image-header.jpg);
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
   .box__brand {
     background-image: url(../images/mobile/image-transforme.jpg);
     background-size: cover; }

@@ -20,9 +20,8 @@ $width-desktop: 1440px;
 $width-mobile: 375px;
 
 // FONT VARIABLES
-$font-Barlow: 'Barlow';
 $font-size-primary: 18px;
-$font-Fraunces: 'Fraunces';
+
 
 //basic
 
@@ -36,14 +35,14 @@ $font-Fraunces: 'Fraunces';
 
 body{
   box-sizing: border-box;
-  font-family: $font-Barlow;
   font-size: $font-size-primary;
+  font-family: 'Lexend Deca', 'Barlow', sans-serif;
 }
 
 .container{
   display: grid;
-  grid-template-rows: 100vh 50vh 50vh;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 90vh 50vh 50vh;
+  grid-template-columns: repeat(4, 25vw);
 }
 
 
