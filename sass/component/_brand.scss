@@ -1,0 +1,32 @@
+.brand{ 
+    &--img{
+        background-image: url(../images/mobile/image-transform.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 45vh;
+    } 
+    &--text{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 1rem;
+        height: 65vh;
+    }
+
+    &--link{
+        font-family: 'Fraunces';
+        text-decoration: underline;
+        text-decoration-color: $color-yellow;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $color-dark-desaturated-blue;
+          
+    }
+
+    &--p{
+        color: $color-dark-grayish-blue;
+      }
+}

@@ -10,4 +10,24 @@
         grid-row: 2 / 3;
     }
 
+    &__audience{
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+
+    &__design{
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+    }
+
+    &__photography{
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+    }
+
+    &__clients{
+        grid-column: 1 / -1;
+        grid-row: 6 / 7;
+    }
+
 }

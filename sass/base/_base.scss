@@ -41,7 +41,7 @@ body{
 
 .container{
   display: grid;
-  grid-template-rows: 90vh 50vh 50vh;
+  grid-template-rows: 90vh 110vh 110vh 100vh 100vh;
   grid-template-columns: repeat(4, 25vw);
 }
 

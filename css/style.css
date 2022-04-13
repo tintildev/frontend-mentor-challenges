@@ -12,17 +12,24 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 90vh 50vh 50vh;
+  grid-template-rows: 90vh 110vh 110vh 100vh 100vh;
   grid-template-columns: repeat(4, 25vw); }
 
 h1 {
-  font-family: "Lexend Deca";
+  font-family: "Fraunces", serif;
+  font-weight: 900;
   font-size: 2.8rem;
   color: white;
   line-height: 1;
-  font-weight: 900;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 0.3969rem; }
+
+h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: #23303e; }
 
 .attribution {
   font-size: 11px;
@@ -34,18 +41,30 @@ h1 {
 p {
   font-family: "Barlow"; }
 
+.pfeil {
+  font-size: 12rem;
+  color: white; }
+
 header {
   grid-row: 1;
-  grid-column: 4 / 5;
-  width: 5rem;
+  grid-column: 1 / 5;
+  width: 100%;
   height: 5rem;
-  z-index: 1; }
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem; }
 
 .nav {
   text-align: center; }
 
 .nav__mobile {
-  display: block; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem; }
 
 .nav__desktop {
   display: none; }
@@ -66,15 +85,96 @@ header {
   grid-column: 1 / -1;
   grid-row: 2 / 3; }
 
+.section__audience {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4; }
+
+.section__design {
+  grid-column: 1 / -1;
+  grid-row: 4 / 5; }
+
+.section__photography {
+  grid-column: 1 / -1;
+  grid-row: 5 / 6; }
+
+.section__clients {
+  grid-column: 1 / -1;
+  grid-row: 6 / 7; }
+
 .box {
   width: 100%;
   height: 100%; }
 
-.box__hero {
+.box__hero--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-image: url(../images/mobile/image-header.jpg);
   background-size: cover;
   background-position: center; }
 
-.box__brand {
+.box__audience--img {
+  background-image: url(../images/mobile/image-stand-out.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 45vh; }
+
+.box__audience--text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1rem;
+  height: 65vh; }
+
+.box__design--img {
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20vh; }
+
+.box__photography--img {
+  background-image: url(../images/mobile/image-photography.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20vh; }
+
+.brand--img {
   background-image: url(../images/mobile/image-transform.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  height: 45vh; }
+
+.brand--text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1rem;
+  height: 65vh; }
+
+.brand--link {
+  font-family: 'Fraunces';
+  text-decoration: underline;
+  text-decoration-color: #fad400;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #23303e; }
+
+.brand--p {
+  color: #818498; }
