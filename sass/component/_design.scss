@@ -1,0 +1,33 @@
+.design{
+    &--img{
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+    &--text{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    &--h2{
+        padding-bottom: 2rem;
+        color: $color-dark-cyan;
+    }
+
+    &--p{
+        font-size: 1.4rem;
+        color: $color-dark-cyan;
+    }
+
+    
+}

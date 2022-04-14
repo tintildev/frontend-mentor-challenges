@@ -108,30 +108,6 @@ header {
     background-image: url(../images/mobile/image-header.jpg);
     background-size: cover;
     background-position: center; }
-  .box__audience--img {
-    background-image: url(../images/mobile/image-stand-out.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 45vh; }
-  .box__audience--text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.6rem;
-    padding: 1rem;
-    height: 65vh; }
-  .box__design--img {
-    background-image: url(../images/mobile/image-graphic-design.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 20vh; }
   .box__photography--img {
     background-image: url(../images/mobile/image-photography.jpg);
     background-size: cover;
@@ -161,11 +137,81 @@ header {
 
 .brand--link {
   font-family: 'Fraunces';
-  text-decoration: underline;
-  text-decoration-color: #fad400;
   font-weight: 900;
   text-transform: uppercase;
   color: #23303e; }
+  .brand--link::before {
+    content: "";
+    position: absolute;
+    background-color: #fad400;
+    width: 12.5rem;
+    height: 0.8rem;
+    margin-left: -0.7rem;
+    margin-top: 1.3rem;
+    opacity: 0.4;
+    border-radius: 25px; }
 
 .brand--p {
   color: #818498; }
+
+.audience--img {
+  background-image: url(../images/mobile/image-stand-out.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 45vh; }
+
+.audience--text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 1rem;
+  height: 65vh; }
+
+.audience--p {
+  color: #818498; }
+
+.audience--link {
+  font-family: 'Fraunces';
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #23303e; }
+  .audience--link::before {
+    content: "";
+    position: absolute;
+    background-color: #fe7867;
+    width: 12.5rem;
+    height: 0.8rem;
+    margin-left: -0.7rem;
+    margin-top: 1.3rem;
+    opacity: 0.4;
+    border-radius: 25px; }
+
+.design--img {
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 5rem; }
+
+.design--text {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem; }
+
+.design--h2 {
+  padding-bottom: 2rem;
+  color: #25564b; }
+
+.design--p {
+  font-size: 1.4rem;
+  color: #25564b; }

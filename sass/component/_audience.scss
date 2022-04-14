@@ -1,10 +1,11 @@
-.brand{ 
+.audience{
+        
     &--img{
-        background-image: url(../images/mobile/image-transform.jpg);
+        background-image: url(../images/mobile/image-stand-out.jpg);
         background-size: cover;
         background-position: center;
         height: 45vh;
-    } 
+    }
     &--text{
         display: flex;
         align-items: center;
@@ -16,26 +17,25 @@
         height: 65vh;
     }
 
+    &--p{
+        color: $color-dark-grayish-blue;
+    }
+
     &--link{
         font-family: 'Fraunces';
-        //text-decoration: underline $color-yellow 5px;
         font-weight: 900;
         text-transform: uppercase;
         color: $color-dark-desaturated-blue; 
         &::before{
             content: "";
             position: absolute;
-            background-color: $color-yellow;
+            background-color: $color-soft-red;
             width: 12.5rem;
             height: 0.8rem;
             margin-left: -0.7rem;
             margin-top: 1.3rem;
             opacity: 0.4;
             border-radius: 25px;
-        }
+        }  
     }
-
-    &--p{
-        color: $color-dark-grayish-blue;
-      }
 }

@@ -15,39 +15,6 @@
         }
     }
 
-    &__audience{
-        
-        &--img{
-            background-image: url(../images/mobile/image-stand-out.jpg);
-            background-size: cover;
-            background-position: center;
-            height: 45vh;
-        }
-        &--text{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            font-size: 1.6rem;
-            padding: 1rem;
-            height: 65vh;
-        }
-    }
-
-    &__design{
-        &--img{
-            background-image: url(../images/mobile/image-graphic-design.jpg);
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: end;
-            flex-direction: column;
-            text-align: center;
-            padding-bottom: 20vh;
-        }
-    }
     &__photography{
         &--img{
             background-image: url(../images/mobile/image-photography.jpg);
