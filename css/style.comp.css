@@ -15,18 +15,19 @@ body {
   grid-template-rows: 90vh 110vh 110vh 100vh 100vh;
   grid-template-columns: repeat(4, 25vw); }
 
+h1, h2, h3, h4 {
+  font-family: "Fraunces", serif; }
+
 h1 {
-  font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 2.8rem;
   color: white;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.3969rem; }
+  letter-spacing: 0.4rem; }
 
 h2 {
-  font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 2.4rem;
   color: #23303e; }
@@ -222,3 +223,38 @@ header {
 .photography--p {
   font-size: 1.4rem;
   color: #19536b; }
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 8vh;
+  padding-bottom: 8vh; }
+  .clients--h3 {
+    text-align: center;
+    color: #a7abae;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem; }
+
+.client {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 4vh 2vw 4vh 2vw;
+  height: 50vh;
+  width: 100%; }
+  .client--user {
+    border-radius: 50%;
+    width: 16vh;
+    padding: 1rem; }
+  .client--p {
+    color: #5a636c;
+    font-size: 1.4rem; }
+  .client h4 {
+    font-size: 1.5rem; }
+  .client--position {
+    font-size: 1.2rem;
+    color: #a7abae; }

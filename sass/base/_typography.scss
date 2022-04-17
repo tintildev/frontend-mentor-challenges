@@ -1,17 +1,19 @@
-h1{
+h1, h2, h3, h4{
   font-family: "Fraunces", serif;
+}
+
+h1{
   font-weight: 900;
   font-size: 2.8rem;
   color: $color-white;
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.3969rem;
+  letter-spacing: 0.4rem;
   
 }
 
 h2{
-  font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 2.4rem;
   color: $color-dark-desaturated-blue;   
