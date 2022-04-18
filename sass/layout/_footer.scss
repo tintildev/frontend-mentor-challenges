@@ -1,0 +1,19 @@
+footer{
+    background-color: $color-moderate-cyan;
+    height: 50vh;
+    width: 100%;
+    color: $color-dark-cyan;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.logo{
+    &--footer{
+        color: $color-dark-cyan;
+    }
+}
