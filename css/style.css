@@ -3,17 +3,20 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 body {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  width: 100%;
   font-size: 18px;
   font-family: 'Lexend Deca', 'Barlow', sans-serif; }
 
 .container {
   display: grid;
   grid-template-rows: 90vh 110vh 110vh 100vh 100vh 150vh 50vh;
-  grid-template-columns: repeat(4, 25vw); }
+  grid-template-columns: repeat(4, 25%); }
 
 .box {
   width: 100%;
