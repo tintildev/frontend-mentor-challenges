@@ -104,18 +104,30 @@ header {
   grid-column: 1 / -1;
   grid-row: 7 / 8; }
 
-footer {
-  background-color: #458c7e;
-  height: 50vh;
+.footer {
+  background-color: #91d4c3;
+  height: 30vh;
   width: 100%;
-  color: #25564b;
+  color: #458c7e;
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; }
-
-.logo--footer {
-  color: #25564b; }
+  align-items: center;
+  justify-content: space-around; }
+  .footer__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto; }
+  .footer__social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto; }
+  .footer--logo {
+    color: #458c7e; }
 
 .hero--img {
   display: flex;

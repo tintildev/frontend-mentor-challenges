@@ -1,19 +1,33 @@
-footer{
-    background-color: $color-moderate-cyan;
-    height: 50vh;
+.footer{
+    background-color: $color-moderate-cyan-light;
+    height: 30vh;
     width: 100%;
-    color: $color-dark-cyan;
+    color: $color-moderate-cyan;
     text-align: center;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-}
+    justify-content: space-around;
 
-.logo{
-    &--footer{
-        color: $color-dark-cyan;
+    &__menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
     }
+
+    &__social{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+    
+    &--logo{
+        color: $color-moderate-cyan;
+    }
+    
 }
