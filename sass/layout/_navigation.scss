@@ -19,14 +19,35 @@ header{
         align-items: center;
         justify-content: space-between;
         height: 2rem;
+
+        @media only screen and (min-width: $width-tablet){
+            display: none;
+
+        }
     }
 
     &__desktop{
         display: none;
+
+        @media only screen and (min-width: $width-tablet){
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 50vw;
+
+        }
     }
 
     &__link{
-        
+        color: $color-white;
+        text-decoration: none;
+
+        &--active{
+            background-color: $color-white;
+            color: black;
+            border-radius: 20px;
+            padding: 0.5rem;
+        }
     }
 
     &__icon{

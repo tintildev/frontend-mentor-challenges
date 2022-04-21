@@ -17,7 +17,9 @@ $color-grayish-blue: hsl(210, 4%, 67%);
 $color-white: hsl(0, 0%, 100%);
 
 // LAYOUT
-$width-desktop: 1440px; 
+$width-desktop: 1440px;
+$width-lp: 769px; 
+$width-tablet: 481px;
 $width-mobile: 375px;
 
 // FONT VARIABLES
@@ -47,6 +49,10 @@ body{
   display: grid;
   grid-template-rows: 90vh 110vh 110vh 100vh 100vh 150vh 50vh;
   grid-template-columns: repeat(4, 25%);
+
+  @media only screen and (min-width: $width-tablet){
+    grid-template-rows: 60vh 50vh 50vh 50vh 60vh 30vh 30vh;
+  }
 }
 
 .box{
