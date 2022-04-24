@@ -51,7 +51,7 @@ body{
   grid-template-columns: repeat(4, 25%);
 
   @media only screen and (min-width: $width-tablet){
-    grid-template-rows: 60vh 50vh 50vh 50vh 60vh 30vh 30vh;
+    grid-template-rows: 60vh 50vh 50vh 50vh 80vh 40vh;
   }
 }
 

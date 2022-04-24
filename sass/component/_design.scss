@@ -8,6 +8,10 @@
         justify-content: end;
         flex-direction: column;
         padding-bottom: 5rem;
+
+        @media only screen and (min-width: $width-tablet){
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+        }
     }
     &--text{
         text-align: center;

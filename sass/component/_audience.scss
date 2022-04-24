@@ -1,10 +1,19 @@
 .audience{
+    @media only screen and (min-width: $width-tablet){
+        display: flex;
+    }
         
     &--img{
         background-image: url(../images/mobile/image-stand-out.jpg);
         background-size: cover;
         background-position: center;
         height: 45vh;
+
+        @media only screen and (min-width: $width-tablet){
+            background-image: url(../images/desktop/image-stand-out.jpg);
+            width: 50%;
+            height: 100%;
+          }
     }
     &--text{
         display: flex;
@@ -15,6 +24,11 @@
         font-size: 1.6rem;
         padding: 1rem;
         height: 65vh;
+
+        @media only screen and (min-width: $width-tablet){
+            width: 50%;
+            height: 100%;
+        }
     }
 
     &--p{

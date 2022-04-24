@@ -7,5 +7,9 @@
         background-image: url(../images/mobile/image-header.jpg);
         background-size: cover;
         background-position: center;
+
+        @media only screen and (min-width: $width-tablet){
+            background-image: url(../images/desktop/image-header.jpg);
+        }
     }
 }
