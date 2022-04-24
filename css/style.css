@@ -20,7 +20,7 @@ body {
 
 @media only screen and (min-width: 481px) {
   .container {
-    grid-template-rows: 60vh 60vh 60vh 60vh 80vh 40vh; } }
+    grid-template-rows: 80vh 60vh 60vh 60vh 80vh 40vh; } }
 
 .box {
   width: 100%;
