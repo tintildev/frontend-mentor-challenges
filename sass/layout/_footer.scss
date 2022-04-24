@@ -16,6 +16,17 @@
         align-items: center;
         width: 100%;
         height: auto;
+
+        @media only screen and (min-width: $width-tablet){
+            justify-content: center;
+        }
+
+        &--link{
+            padding: 0;
+            @media only screen and (min-width: $width-tablet){
+                padding: 2rem;
+            }
+        }
     }
 
     &__social{
@@ -24,10 +35,21 @@
         align-items: center;
         width: 100%;
         height: auto;
+
+        @media only screen and (min-width: $width-tablet){
+            justify-content: center;
+        }
     }
     
     &--logo{
         color: $color-moderate-cyan;
     }
     
+}
+
+.icon{
+    padding: 0;
+    @media only screen and (min-width: $width-tablet){
+        padding: 1rem;
+    }
 }

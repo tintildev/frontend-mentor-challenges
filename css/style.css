@@ -20,7 +20,7 @@ body {
 
 @media only screen and (min-width: 481px) {
   .container {
-    grid-template-rows: 60vh 50vh 50vh 50vh 80vh 40vh; } }
+    grid-template-rows: 60vh 60vh 60vh 60vh 80vh 40vh; } }
 
 .box {
   width: 100%;
@@ -42,6 +42,10 @@ h2 {
   font-weight: 900;
   font-size: 2.4rem;
   color: #23303e; }
+
+@media only screen and (min-width: 481px) {
+  h2 {
+    font-size: 1.5em; } }
 
 .attribution {
   font-size: 11px;
@@ -148,7 +152,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; } }
+    justify-content: space-evenly;
+    margin: 3rem; } }
 
 .section__gallery {
   grid-column: 1 / -1;
@@ -176,6 +181,17 @@ header {
   width: 100%;
   height: auto; }
 
+@media only screen and (min-width: 481px) {
+  .footer__menu {
+    justify-content: center; } }
+
+.footer__menu--link {
+  padding: 0; }
+
+@media only screen and (min-width: 481px) {
+  .footer__menu--link {
+    padding: 2rem; } }
+
 .footer__social {
   display: flex;
   justify-content: space-around;
@@ -183,8 +199,19 @@ header {
   width: 100%;
   height: auto; }
 
+@media only screen and (min-width: 481px) {
+  .footer__social {
+    justify-content: center; } }
+
 .footer--logo {
   color: #458c7e; }
+
+.icon {
+  padding: 0; }
+
+@media only screen and (min-width: 481px) {
+  .icon {
+    padding: 1rem; } }
 
 .hero--img {
   display: flex;
@@ -314,11 +341,17 @@ header {
 
 @media only screen and (min-width: 481px) {
   .design--img {
-    background-image: url(../images/desktop/image-graphic-design.jpg); } }
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+    padding-bottom: 0; } }
 
 .design--text {
   text-align: center;
   padding: 1rem; }
+
+@media only screen and (min-width: 481px) {
+  .design--text {
+    width: 80%;
+    padding-bottom: 3rem; } }
 
 .design--h2 {
   padding-bottom: 2rem;
@@ -327,6 +360,10 @@ header {
 .design--p {
   font-size: 1.4rem;
   color: #25564b; }
+
+@media only screen and (min-width: 481px) {
+  .design--p {
+    font-size: 1em; } }
 
 .photography--img {
   background-image: url(../images/mobile/image-photography.jpg);
@@ -340,11 +377,17 @@ header {
 
 @media only screen and (min-width: 481px) {
   .photography--img {
-    background-image: url(../images/desktop/image-photography.jpg); } }
+    background-image: url(../images/desktop/image-photography.jpg);
+    padding-bottom: 0; } }
 
 .photography--text {
   text-align: center;
   padding: 1rem; }
+
+@media only screen and (min-width: 481px) {
+  .photography--text {
+    width: 80%;
+    padding-bottom: 3rem; } }
 
 .photography--h2 {
   padding-bottom: 2rem;
@@ -353,6 +396,10 @@ header {
 .photography--p {
   font-size: 1.4rem;
   color: #19536b; }
+
+@media only screen and (min-width: 481px) {
+  .photography--p {
+    font-size: 1em; } }
 
 .clients {
   display: flex;
@@ -367,7 +414,9 @@ header {
     flex-direction: row;
     display: flex;
     align-items: center;
-    justify-content: space-between; } }
+    justify-content: space-evenly;
+    height: 70%;
+    padding: 0; } }
 
 .clients--h3 {
   text-align: center;
@@ -384,6 +433,12 @@ header {
   padding: 4vh 2vw 4vh 2vw;
   height: 50vh;
   width: 100%; }
+
+@media only screen and (min-width: 481px) {
+  .client {
+    height: 100%;
+    width: 25%;
+    padding: 0; } }
 
 .client--user {
   border-radius: 50%;

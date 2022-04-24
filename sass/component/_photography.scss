@@ -11,12 +11,18 @@
 
         @media only screen and (min-width: $width-tablet){
             background-image: url(../images/desktop/image-photography.jpg);
+            padding-bottom: 0;
         }
     }
 
     &--text{
         text-align: center;
         padding: 1rem;
+
+        @media only screen and (min-width: $width-tablet){
+            width: 80%;
+            padding-bottom: 3rem;
+        }
     }
 
     &--h2{
@@ -27,5 +33,9 @@
     &--p{
         font-size: 1.4rem;
         color: $color-dark-blue;
+
+        @media only screen and (min-width: $width-tablet){
+            font-size: 1em;
+        }
     }
 }
