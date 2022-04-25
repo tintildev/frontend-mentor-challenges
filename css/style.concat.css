@@ -183,7 +183,10 @@ header {
       .footer__social {
         justify-content: center; } }
   .footer--logo {
-    color: #458c7e; }
+    filter: invert(49%) sepia(13%) saturate(1289%) hue-rotate(118deg) brightness(97%) contrast(88%); }
+    @media only screen and (min-width: 481px) {
+      .footer--logo {
+        padding-top: 2rem; } }
 
 .icon {
   padding: 0; }

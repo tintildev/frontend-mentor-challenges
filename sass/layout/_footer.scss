@@ -42,7 +42,10 @@
     }
     
     &--logo{
-        color: $color-moderate-cyan;
+        filter: invert(49%) sepia(13%) saturate(1289%) hue-rotate(118deg) brightness(97%) contrast(88%);
+        @media only screen and (min-width: $width-tablet){
+            padding-top: 2rem;
+        }
     }
     
 }
