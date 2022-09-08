@@ -80,6 +80,10 @@ header {
     @media only screen and (min-width: 481px) {
       .nav__mobile {
         display: none; } }
+    .nav__mobile--content {
+      display: none;
+      background-color: white;
+      z-index: 1; }
   .nav__desktop {
     display: none; }
     @media only screen and (min-width: 481px) {

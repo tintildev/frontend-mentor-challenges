@@ -86,6 +86,11 @@ header {
   .nav__mobile {
     display: none; } }
 
+.nav__mobile--content {
+  display: none;
+  background-color: white;
+  z-index: 1; }
+
 .nav__desktop {
   display: none; }
 

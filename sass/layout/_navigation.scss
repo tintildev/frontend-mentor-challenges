@@ -24,7 +24,15 @@ header{
             display: none;
 
         }
+
+        &--content{
+            display: none;
+            background-color: white;
+            z-index: 1;
+        }
     }
+
+
 
     &__desktop{
         display: none;
