@@ -31,6 +31,7 @@
 - CSS, Sass
 - Flexbox, Grid
 - Mobile-first workflow
+- JavaScript
 
 ## Author
 
