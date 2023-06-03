@@ -18,3 +18,5 @@
 #Ignore Files
 README-template.md
 style-guide.md
+/node_modules
+css/style.comp.css
