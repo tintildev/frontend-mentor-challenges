@@ -4,12 +4,22 @@
 .attribution a { color: hsl(228, 45%, 44%); }
 
 .list{
-  padding-left: 1rem;
+  margin-left: 1.8rem;
+
+  li{
+    list-style-image: url(../image/icon-list.svg);
+    //list-style-position: inside;
+  }
 }
 
 .form{
   display: flex;
   flex-direction: column;
+
+  &__label{
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
 
   &__input{
     width: 100%;
@@ -23,4 +33,6 @@
 h1{
   font-size: 2rem;
 }
+
+
 

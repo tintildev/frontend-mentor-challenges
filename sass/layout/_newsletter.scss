@@ -23,7 +23,10 @@
   }
   &__img{
     background-image: url(../image/illustration-sign-up-mobile.svg);
-    height: 25vh; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 40vh; 
     width: auto;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
