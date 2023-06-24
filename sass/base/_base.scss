@@ -2,18 +2,17 @@
 
 //Neutral
 $color-main-bg: hsl(4, 100%, 67%);
-$darkSlateGrey :hsl(234, 29%, 20%);
+$darkSlateGrey: hsl(234, 29%, 20%);
 $charcoalGrey: hsl(235, 18%, 26%);
 $grey: hsl(231, 7%, 60%);
 $white: hsl(0, 0%, 100%);
 
-
 // LAYOUT
-$width-desktop: 1440px; 
+$width-desktop: 1440px;
 $width-mobile: 375px;
 
 // FONT VARIABLES
-$font-primary: 'Roboto';
+$font-primary: "Roboto";
 $font-weight-primary: 400;
 $font-weight-bold: 700;
 
@@ -21,23 +20,22 @@ $font-weight-bold: 700;
 
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-html{
+html {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-body{
+body {
   box-sizing: border-box;
   background-color: $darkSlateGrey;
-  
 
-  @media only screen and (min-width: $width-mobile){
+  @media only screen and (min-width: $width-mobile) {
     height: 100vh;
 
     display: flex;
@@ -47,10 +45,10 @@ body{
   }
 }
 
-
-
-
-
-
-
-
+.attribution {
+  position: absolute;
+  bottom: 0;
+  padding-top: 1rem;
+  background-color: white;
+  width: 100%;
+}

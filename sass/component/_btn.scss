@@ -1,6 +1,18 @@
 .btn{
     height: 3rem;
+    width: 100%;
     border-radius: 0.4rem;
     color: $white;
     background: $darkSlateGrey;
+    transition: 0.3s;
+
+    &--successful{
+        background-color: $color-main-bg;
+        box-shadow: 0 1.5rem 2rem $color-main-bg;
+    }
+
+    &--thanks:hover{
+        background-color: $color-main-bg;
+        box-shadow: 0 1.5rem 2rem $color-main-bg;
+    }
 }
