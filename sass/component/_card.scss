@@ -1,0 +1,113 @@
+.card{
+  background-color: $color-card-bg;
+  width: 90vw;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media only screen and (min-width: 650px){
+    flex-direction: row-reverse;
+    width: 80vw;
+  }
+
+  &__imgDiv{
+    height: 25vh;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-image: linear-gradient($color-img, $color-img), url(../images/image-header-mobile.jpg);
+    background-size: cover;
+    background-position: top;
+
+    @media only screen and (min-width: 650px){
+      background-image: linear-gradient($color-img, $color-img), url(../images/image-header-desktop.jpg);
+      border-top-left-radius: 0rem;
+      border-bottom-right-radius: 1rem;
+      width: 40vw;
+      height: 45vh;
+    }
+  }
+
+  &__link{
+    color: $color-accent;
+    animation: textColor 1.2s linear;
+  }
+
+  &__center{
+    width: 85vw;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 5%;
+    @media only screen and (min-width: 650px){
+      width: 40vw;
+      padding-left: 5%;
+      padding-right: 10%;
+      padding-top: 0%;
+      padding-bottom: 0%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__textDiv{
+    text-align: center;
+    padding-bottom: 15%;
+  }
+
+  &__p{
+    color: $color-value-white;
+    font-family: $font-secound;
+
+    @media only screen and (min-width: 650px){
+      text-align: left;
+      font-size: $font-size-big;
+    }
+
+    &--value{
+      color: $color-value-white;
+      text-transform: uppercase; 
+     }
+  }
+
+  &__values{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (min-width: 650px){
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__valueDiv{
+    text-align: center;
+    padding-bottom: 10%;
+
+    @media only screen and (min-width: 650px){
+      &--1{
+        animation: divFly 2s linear 1s backwards;
+      }
+  
+      &--2{
+        animation: divFly 2s linear 1.6s backwards;
+      }
+  
+      &--3{
+        animation: divFly 2s linear 2s backwards;
+      }
+    }
+    
+  }
+
+}
+
+
+
+
