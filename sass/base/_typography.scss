@@ -1,0 +1,43 @@
+h1, h2, h3, h4{
+  font-family: "Fraunces", serif;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: $color-white;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  
+}
+
+h2{
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: $color-dark-desaturated-blue;  
+  
+  @media only screen and (min-width: $width-tablet){
+    font-size: 1.5em;
+}
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+  & a{
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+p{
+  font-family: "Barlow";
+}
+
+.pfeil{
+  font-size: 12rem;
+  color: $color-white;
+}
+
+
+

@@ -1,0 +1,72 @@
+//////// COLOR VARIABLES
+
+// Primary
+
+$color-soft-red: hsl(7, 99%, 70%);
+$color-yellow: hsl(51, 100%, 49%);
+$color-dark-cyan: hsl(167, 40%, 24%); //(graphic design text)
+$color-dark-blue:  hsl(198, 62%, 26%); //(photography text)
+$color-moderate-cyan: hsl(168, 34%, 41%); //(footer)
+$color-moderate-cyan-light: hsl(165, 44%, 70%); //(footer-background)
+
+//Neutral
+$color-dark-desaturated-blue: hsl(212, 27%, 19%);
+$color-very-dark-grayish-blue: hsl(213, 9%, 39%);
+$color-dark-grayish-blue: hsl(232, 10%, 55%);
+$color-grayish-blue: hsl(210, 4%, 67%);
+$color-white: hsl(0, 0%, 100%);
+
+// LAYOUT
+$width-desktop: 1440px;
+$width-lp: 769px; 
+$width-tablet: 481px;
+$width-mobile: 375px;
+
+// FONT VARIABLES
+$font-size-primary: 18px;
+
+
+//basic
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: $font-size-primary;
+  font-family: 'Lexend Deca', 'Barlow', sans-serif;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: 90vh 110vh 110vh 100vh 100vh 150vh 50vh;
+  grid-template-columns: repeat(4, 25%);
+
+  @media only screen and (min-width: $width-tablet){
+    grid-template-rows: 80vh 60vh 60vh 60vh 80vh 40vh;
+  }
+}
+
+.box{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
