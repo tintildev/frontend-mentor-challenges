@@ -1,0 +1,54 @@
+//////// COLOR VARIABLES
+
+//Neutral
+$color-main-bg: hsl(4, 100%, 67%);
+$darkSlateGrey: hsl(234, 29%, 20%);
+$charcoalGrey: hsl(235, 18%, 26%);
+$grey: hsl(231, 7%, 60%);
+$white: hsl(0, 0%, 100%);
+
+// LAYOUT
+$width-desktop: 1440px;
+$width-mobile: 375px;
+
+// FONT VARIABLES
+$font-primary: "Roboto";
+$font-weight-primary: 400;
+$font-weight-bold: 700;
+
+//basic
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $darkSlateGrey;
+
+  @media only screen and (min-width: $width-mobile) {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  padding-top: 1rem;
+  background-color: white;
+  width: 100%;
+}
