@@ -1,0 +1,128 @@
+.card{
+    width: $width-mobile;
+    height: auto;
+    padding: 1.5rem;
+    margin: 4rem auto 1.5rem;
+    background-color: $color-card;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, min-content);
+    grid-row-gap: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba(black, .40);
+
+
+
+    @media only screen and (max-width: $width-mobile){
+        width: 90vw;
+    }
+
+    &__viewContainer{
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $color-primary-light;
+        border-radius: 1rem;
+        transition: all ease-in-out 0.5s;
+        cursor: pointer;
+
+        //icon
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__view{
+        transition: all ease-in-out 0.8s;
+
+    }
+
+    &__imgContainer{
+        border-radius: 1rem;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        position: relative;
+        
+        &:hover{
+            .card__viewContainer{
+                opacity: 1;
+            }
+            .card__view{
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    &__img{
+        width: 100%;
+        height: auto; 
+        border-radius: 1rem;
+    }
+    &__heading{
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+
+        &:hover{
+            cursor: pointer;
+            color: $color-primary-light;
+        }
+    }
+    &__text{
+        color: $color-primary;
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+
+        &--creation{
+            padding-left: 1rem;
+        }
+    }
+    &__value{
+        color: $color-primary-light;
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+
+        display: flex;
+        align-items: center;
+    }
+    &__time{
+        color: $color-primary;
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+
+        display: flex;
+        align-items: center;
+    }
+    &__link{
+        color: $color-white;
+        text-decoration: none;
+
+        &:hover{
+            cursor: pointer;
+            color: $color-primary-light;
+        }
+    }
+    &__break{
+        border: solid 1px $color-line;
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+    }
+    &__avatar{
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border: solid 1px $color-white;
+        border-radius: 50%;
+    }
+    &__creation{
+        color: $color-primary;
+        grid-column: 1 / -1;
+        grid-row: 6 / 7;
+        
+        display: flex;
+        align-items: center;
+    }
+    &__icon{
+        padding-right: 0.5rem;
+    }
+}
