@@ -1,0 +1,9 @@
+/node_modules
+
+# Ignore (generated) afphoto files,
+*.afphoto
+
+css/style.comp.css
+css/style.prefix.css
+
+/fonts
