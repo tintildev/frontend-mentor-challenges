@@ -1,0 +1,32 @@
+// Dark Theme
+/* 60 30 10 Design
+Background Color #101d2c
+30% green
+10% white
+*/
+
+body{
+    @media (prefers-color-scheme: dark) {
+        background-color: var(--color-secondary);
+        
+    }
+}
+
+h1, h2, h3, h4, h5{
+    @media (prefers-color-scheme: dark) {
+        color: white;
+    }
+}
+
+a, p, li {
+    @media (prefers-color-scheme: dark) {
+        color: white;
+    }
+}
+
+.about__text{
+    @media (prefers-color-scheme: dark) {
+        color: white;
+    }
+}
+
