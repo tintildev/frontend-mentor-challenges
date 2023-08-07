@@ -24,8 +24,18 @@
 ![](./images/nft.png)
 ![](./images/stats.png)
 ![](./images/sunnyside.png)
+![](./images/newsletter.png)
 
 ### Links
+
+[Frontend Mentor](https://www.frontendmentor.io/)
+
+[Overview]([https://www.frontendmentor.io/](https://mklestil.github.io/frontend-mentor-challenges/))
+[Sunnyside]([https://www.frontendmentor.io/](https://mklestil.github.io/frontend-mentor-challenges/sunnyside-agency-landing-page/index.html))
+[Stats preview card]([https://www.frontendmentor.io/](https://mklestil.github.io/frontend-mentor-challenges/stats-preview-card-component/index.html))
+[nft preview card]([https://www.frontendmentor.io/](https://mklestil.github.io/frontend-mentor-challenges/nft-preview-card-component/index.html))
+[newsletter]([https://www.frontendmentor.io/](https://mklestil.github.io/frontend-mentor-challenges/newsletter-signup-form/index.html))
+
 
 
 
