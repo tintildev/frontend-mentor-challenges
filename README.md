@@ -24,6 +24,7 @@
 ![](./images/nft.png)
 ![](./images/stats.png)
 ![](./images/sunnyside.png)
+![](./images/newsletter.png)
 
 ### Links
 
