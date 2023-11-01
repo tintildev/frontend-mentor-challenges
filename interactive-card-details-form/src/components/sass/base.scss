@@ -1,0 +1,51 @@
+// Front-end Style Guide
+
+:root {
+  // Layout
+  --with__mobile: 375px;
+  --with__desktop: 1440px;
+
+  // Colors
+  --color-linearGradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+  --color-red: hsl(0, 100%, 66%);
+
+  --color-White: hsl(0, 0%, 100%);
+  --color-Light-grayish-violet: hsl(270, 3%, 87%);
+  --color-Dark-grayish-violet: hsl(279, 6%, 55%);
+  --color-Very-dark-violet: hsl(278, 68%, 11%);
+
+  //Font
+  --default-Font-size: 18px;
+
+  //family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk);
+  --weights: 500;
+}
+
+//my default settings
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 10px/16px = 62.5% -> 1rem = 10px */
+}
+
+//default footer
+.attribution {
+    position: absolute;
+    bottom: 0;
+    padding-top: 1rem;
+    background-color: white;
+    width: 100%;
+  }
+  
+  footer{
+    width: 100%;
+  }
