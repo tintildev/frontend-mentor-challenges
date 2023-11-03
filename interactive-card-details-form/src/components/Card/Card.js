@@ -1,8 +1,9 @@
 import React from "react";
+import "../sass/card.scss";
 
 const Card = (porps) => {
     return (
-        <div></div>
+        <div className="card"></div>
     )
 }
 

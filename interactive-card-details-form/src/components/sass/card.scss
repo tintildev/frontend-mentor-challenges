@@ -1,0 +1,18 @@
+.card{
+
+  &--Front{
+    height: 250px;
+    width: 100%;
+    border: 1px solid green;
+
+    background-repeat: round;
+  }
+
+  &--Back{
+    height: 250px;
+    width: 100%;
+    border: 1px solid red;
+
+    background-repeat: round;
+  }
+}
