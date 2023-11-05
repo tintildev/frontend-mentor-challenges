@@ -1,18 +1,36 @@
 .card{
 
   &--Front{
-    height: 250px;
+    height: 140%;
     width: 100%;
-    border: 1px solid green;
+    background-repeat: no-repeat;
+    background-size: contain;
 
-    background-repeat: round;
+    grid-row: 3/5;
+    grid-column: 2/5;
+    z-index: 2;
+   
   }
 
   &--Back{
-    height: 250px;
+    height: 100%;
     width: 100%;
-    border: 1px solid red;
 
-    background-repeat: round;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    grid-row: 2/4;
+    grid-column: 3/6;
+  }
+
+  &--Holder{
+    background-color: var(--color-Very-dark-violet);
+    display: grid;
+    grid-template-rows: 50px 88px 80px 80px;
+    grid-template-columns:  5vw 20vw 24.5vw 24.5vw 20vw 5vw;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
   }
 }

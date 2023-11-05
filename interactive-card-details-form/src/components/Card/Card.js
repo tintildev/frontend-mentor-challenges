@@ -1,9 +1,10 @@
 import React from "react";
 import "../sass/card.scss";
 
-const Card = (porps) => {
-    return (
-        <div className="card"></div>
+function Card(props){
+    const classes = 'card ' + props.className;
+    return(
+        <div className={classes} style={{backgroundImage: "url(/images/bg-main-mobile.png"}}>{props.children}</div>
     )
 }
 
