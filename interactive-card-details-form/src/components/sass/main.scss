@@ -2,27 +2,62 @@
   background-color: var(--color-Very-dark-violet);
   display: flex;
   flex-direction: column;
-  
 }
 
 .form {
   background: white;
   padding: 1rem;
-  padding-top: 10rem;
+  padding-top: 8vh;
 
   display: flex;
   flex-direction: column;
+  gap: 1rem;
 
   &--label {
     font-weight: var(--weights);
     text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+
+  &--input {
+    height: 2rem;
+    font-size: var(--default-Font-size);
+    border: 1px solid var(--color-Light-grayish-violet);
+    border-radius: 5px;
+    color: var(--color-Light-grayish-violet);
+    padding: 1rem;
+
+    &--date {
+      width: 25vw;
+      height: 2rem;
+      font-size: var(--default-Font-size);
+      border: 1px solid var(--color-Light-grayish-violet);
+      border-radius: 5px;
+      color: var(--color-Light-grayish-violet);
+      padding: 1rem;
+    }
   }
 
   &--button {
+    background-color: var(--color-Very-dark-violet);
+    color: var(--color-White);
+    border-radius: 10px;
+    height: 3rem;
+    font-size: var(--default-Font-size);
   }
 
   &--div {
     display: flex;
     flex-direction: column;
+
+    &--break {
+      width: 50vw;
+    }
+
+    &--date {
+      display: flex;
+    }
   }
 }
