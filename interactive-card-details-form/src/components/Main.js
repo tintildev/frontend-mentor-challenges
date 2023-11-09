@@ -9,18 +9,19 @@ import Form from "./Form";
 const Main = (props) => {
   return (
     <div className="Main">
-      <Card className="card--Holder">
-        <CardBack value="000"></CardBack>
-        <CardFront
-          number="0000 0000 0000 0000"
-          name="Jane Appleseed"
-          date="00/00"
-        ></CardFront>
-        
-      </Card>
-      <Form></Form>
-
-      
+      <main>
+        <section>
+          <Card className="card--Holder">
+            <CardBack value="000"></CardBack>
+            <CardFront
+              number="0000 0000 0000 0000"
+              name="Jane Appleseed"
+              date="00/00"
+            ></CardFront>
+          </Card>
+          <Form></Form>
+        </section>
+      </main>
 
       <Footer></Footer>
     </div>

@@ -3,44 +3,44 @@ import React from "react";
 const Form = (props) => {
   return (
     <form className="form">
-      <div className="form--div">
-        <label className="form--label">Cardholder Name</label>
+      <div className="form__div">
+        <label className="form__label">Cardholder Name</label>
         <input
-          className="form--input"
+          className="form__input"
           type="text"
           placeholder="e.g. JaneAppleseed"
         ></input>
       </div>
-      <div className="form--div">
-        <label className="form--label">Card Number</label>
+      <div className="form__div">
+        <label className="form__label">Card Number</label>
         <input
-          className="form--input"
+          className="form__input"
           type="number"
           placeholder="e.g. 1234 5678 9123 0000"
         ></input>
       </div>
-      <div className="form--div">
-        <div className="form--div--date">
-          <div className="form--div--break">
-            <label className="form--label">Exp. Date (MM/YY)</label>
-            <div className="form--div--date">
+      <div className="form__div">
+        <div className="form__div--date">
+          <div className="form__div--break">
+            <label className="form__label">Exp. Date (MM/YY)</label>
+            <div className="form__div--date">
               <input
-                className="form--input--date"
+                className="form__input form__input--date"
                 type="number"
                 placeholder="MM"
               ></input>
               <input
-                className="form--input--date"
+                className="form__input form__input--date"
                 type="number"
                 placeholder="YY"
               ></input>
             </div>
           </div>
-          <div className="form--div--break">
-            <div className="form--div">
-              <label className="form--label">CVC</label>
+          <div className="form__div--break">
+            <label className="form__label">CVC</label>
+            <div className="form__div">
               <input
-                className="form--input--date"
+                className="form__input form__input--date form__input--date--right"
                 type="number"
                 placeholder="e.g. 123 "
               ></input>
@@ -48,7 +48,7 @@ const Form = (props) => {
           </div>
         </div>
       </div>
-      <button className="form--button">Confirm</button>
+      <button className="form__button">Confirm</button>
     </form>
   );
 };
