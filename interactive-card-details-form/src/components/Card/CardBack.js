@@ -3,8 +3,8 @@ import "../sass/card.scss";
 
 const CardBack = (props) => {
     return (
-        <div className="card--Back" style={{backgroundImage: "url(/images/bg-card-back.png"}}>
-            <p>{props.value}</p>
+        <div className="card__Back" style={{backgroundImage: "url(/images/bg-card-back.png"}}>
+            <p className="card__Back--CVC">{props.value}</p>
         </div>
     )
 }

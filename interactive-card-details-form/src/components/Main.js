@@ -16,7 +16,8 @@ const Main = (props) => {
             <CardFront
               number="0000 0000 0000 0000"
               name="Jane Appleseed"
-              date="00/00"
+              MM="00"
+              YY="00"
             ></CardFront>
           </Card>
           <Form></Form>
