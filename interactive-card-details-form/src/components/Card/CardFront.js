@@ -17,9 +17,9 @@ const CardFront = (props) => {
         <div className="card__Front--details">
           <p className="card__Front--name">{props.name}</p>
           <div className="card__Front--date">
-            <p className="card__Front--MM">{props.MM}</p>
+            <p className="card__Front--MM">{props.mm}</p>
             <p>/</p>
-            <p className="card__Front--YY">{props.YY}</p>
+            <p className="card__Front--YY">{props.yy}</p>
           </div>
         </div>
       </div>
