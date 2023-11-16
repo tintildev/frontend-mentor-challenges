@@ -4,26 +4,30 @@ const Form = (props) => {
 
   const nameChangeHandler = (event) => {
     props.nameHandler(event.target.value);
-  }
+  };
 
   const numberChangeHandler = (event) => {
-    props.numberHandler(event.target.value);
-  }
+    if (event.target.validity.valid) {
+      props.numberHandler(event.target.value);
+      props.numberFrontHandler(event.target.value);
+    } 
+    else{
+      event.preventDefault();
+      
+    }
+  };
 
   const mmChangeHandler = (event) => {
     props.mmHandler(event.target.value);
-  }
+  };
 
   const yyChangeHandler = (event) => {
     props.yyHandler(event.target.value);
-  }
+  };
 
   const cvcChangeHandler = (event) => {
     props.cvcHandler(event.target.value);
-  }
-
-
-  
+  };
 
   return (
     <form className="form">
@@ -37,12 +41,17 @@ const Form = (props) => {
         ></input>
       </div>
       <div className="form__div">
-        <label className="form__label">Card Number</label>
+        <label className="form__label" for="cardNumber">Card Number</label>
         <input
           className="form__input"
-          type="number"
-          placeholder={props.number}
+          placeholder={props.numberPlaceholder}
           onChange={numberChangeHandler}
+          type="text"
+          maxLength="16"
+          pattern="^-?[0-9]\d*\.?\d*$"
+          id="cardNumber"
+          required
+          
         ></input>
       </div>
       <div className="form__div">
@@ -77,7 +86,9 @@ const Form = (props) => {
           </div>
         </div>
       </div>
-      <button type="submit" className="form__button">Confirm</button>
+      <button type="submit" className="form__button">
+        Confirm
+      </button>
     </form>
   );
 };
