@@ -1,20 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Form = (props) => {
+
+  const [cardNumber, setCardNumber] = useState("");
 
   const nameChangeHandler = (event) => {
     props.nameHandler(event.target.value);
   };
 
   const numberChangeHandler = (event) => {
-    if (event.target.validity.valid) {
-      props.numberHandler(event.target.value);
-      props.numberFrontHandler(event.target.value);
-    } 
-    else{
-      event.preventDefault();
-      
-    }
+    setCardNumber(event.target.value);
+    props.numberHandler(event.target.value);
   };
 
   const mmChangeHandler = (event) => {
@@ -45,13 +41,11 @@ const Form = (props) => {
         <input
           className="form__input"
           placeholder={props.numberPlaceholder}
-          onChange={numberChangeHandler}
           type="text"
-          maxLength="16"
-          pattern="^-?[0-9]\d*\.?\d*$"
-          id="cardNumber"
           required
-          
+          maxLength={19}
+          onChange={numberChangeHandler}
+          value={cardNumber.replace(/\s/g, "").replace(/(\d{4})/g, "$1 ").trim()}
         ></input>
       </div>
       <div className="form__div">
@@ -78,9 +72,11 @@ const Form = (props) => {
             <div className="form__div">
               <input
                 className="form__input form__input--date form__input--date--right"
-                type="number"
+                type="text"
                 placeholder={props.cvc}
                 onChange={cvcChangeHandler}
+                pattern="[0-9]{10}"
+                maxLength="3"
               ></input>
             </div>
           </div>

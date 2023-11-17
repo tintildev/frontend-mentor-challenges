@@ -8,7 +8,6 @@ import Form from "./Form";
 
 const Main = (props) => {
   const [cardNumber, setCardNumber] = useState("0000 0000 0000 0000");
-  const [cardFrontNumber, setCardFrontNumber] = useState("0000 0000 0000 0000");
   const [cardName, setCardName] = useState("Jane Appleseed");
   const [cardMM, setCardMM] = useState("00");
   const [cardYY, setCardYY] = useState("00");
@@ -16,21 +15,6 @@ const Main = (props) => {
 
   const numberChangeHandler = (value) => {
     setCardNumber(value);
-  };
-  const numberFrontChangeHandler = (value) => {
-    if(cardFrontNumber.length > 3){
-      addSpaceToCardNumber(3);
-    }
-    if(cardFrontNumber.length > 7){
-      addSpaceToCardNumber(3);
-      addSpaceToCardNumber(7);
-    }
-    if(cardFrontNumber.length > 11){
-      addSpaceToCardNumber(3);
-      addSpaceToCardNumber(7);
-      addSpaceToCardNumber(11);
-    }
-    setCardFrontNumber(value);
   };
 
   const nameChangeHandler = (value) => {
@@ -46,12 +30,6 @@ const Main = (props) => {
     setCardCVC(value);
   };
 
-  function addSpaceToCardNumber(index){
-    setCardFrontNumber((cardFrontNumber) => {
-      return [...cardFrontNumber.slice(0,index), " ", ...cardFrontNumber(index)];
-    });
-  }
-
   return (
     <div className="Main">
       <main>
@@ -59,7 +37,7 @@ const Main = (props) => {
           <Card className="card--Holder">
             <CardBack cvc={cardCVC}></CardBack>
             <CardFront
-              number={cardFrontNumber}
+              number={cardNumber}
               name={cardName}
               mm={cardMM}
               yy={cardYY}
@@ -73,7 +51,6 @@ const Main = (props) => {
             yy={cardYY}
             cvc={cardCVC}
             numberHandler={numberChangeHandler}
-            numberFrontHandler={numberFrontChangeHandler}
             nameHandler={nameChangeHandler}
             mmHandler={mmChangeHandler}
             yyHandler={yyChangeHandler}
