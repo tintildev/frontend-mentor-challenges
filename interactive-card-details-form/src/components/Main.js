@@ -8,7 +8,7 @@ import Form from "./Form";
 
 const Main = (props) => {
   const [cardNumber, setCardNumber] = useState("0000 0000 0000 0000");
-  const [cardName, setCardName] = useState("Jane Appleseed");
+  const [cardName, setCardName] = useState("e.g. Jane Appleseed");
   const [cardMM, setCardMM] = useState("00");
   const [cardYY, setCardYY] = useState("00");
   const [cardCVC, setCardCVC] = useState("000");

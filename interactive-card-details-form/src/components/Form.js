@@ -3,8 +3,13 @@ import React, { useState } from "react";
 const Form = (props) => {
 
   const [cardNumber, setCardNumber] = useState("");
+  //const [cardName, setCardName] = useState("e.g. Jane Appleseed");
+  const [cardMM, setCardMM] = useState("MM");
+  const [cardYY, setCardYY] = useState("YY");
+  const [cardCVC, setCardCVC] = useState("e.g. 123");
 
   const nameChangeHandler = (event) => {
+    
     props.nameHandler(event.target.value);
   };
 
@@ -14,15 +19,39 @@ const Form = (props) => {
   };
 
   const mmChangeHandler = (event) => {
-    props.mmHandler(event.target.value);
+    let value = event.target.value;
+    if (value > 0 && value < 13){
+      setCardMM(value)
+      props.mmHandler(value);
+    }else{
+      setCardMM("MM")
+      props.mmHandler("MM");
+    }
+    
   };
 
   const yyChangeHandler = (event) => {
-    props.yyHandler(event.target.value);
+    let value = event.target.value;
+    if(value < 99 && value > 0){
+      setCardYY(value)
+      props.yyHandler(value);
+    }else{
+      setCardYY("YY")
+      props.yyHandler("YY");
+    }
   };
 
   const cvcChangeHandler = (event) => {
-    props.cvcHandler(event.target.value);
+    let value = event.target.value;
+    if(value < 1000){
+      setCardCVC(value);
+      props.cvcHandler(value);
+    }else{
+      setCardCVC("e.g. 123");
+      props.cvcHandler("e.g. 123");
+    }
+    
+
   };
 
   return (
@@ -32,15 +61,16 @@ const Form = (props) => {
         <input
           className="form__input"
           type="text"
-          placeholder={props.name}
+          placeholder="e.g. Jane Appleseed"
           onChange={nameChangeHandler}
+          maxLength="18"
         ></input>
       </div>
       <div className="form__div">
         <label className="form__label" for="cardNumber">Card Number</label>
         <input
           className="form__input"
-          placeholder={props.numberPlaceholder}
+          placeholder="e.g. 1234 5678 9123 0000"
           type="text"
           required
           maxLength={19}
@@ -56,13 +86,21 @@ const Form = (props) => {
               <input
                 className="form__input form__input--date"
                 type="number"
-                placeholder={props.mm}
+                min="1"
+                max="12"
+                step="1"
+                value={cardMM}
+                placeholder={cardMM}
                 onChange={mmChangeHandler}
               ></input>
               <input
                 className="form__input form__input--date"
                 type="number"
-                placeholder={props.yy}
+                min="0"
+                max="99"
+                step="1"
+                placeholder={cardYY}
+                value={cardYY}
                 onChange={yyChangeHandler}
               ></input>
             </div>
@@ -72,11 +110,12 @@ const Form = (props) => {
             <div className="form__div">
               <input
                 className="form__input form__input--date form__input--date--right"
-                type="text"
-                placeholder={props.cvc}
+                type="number"
+                min="0"
+                max="999"
+                step="1"
+                placeholder={cardCVC}
                 onChange={cvcChangeHandler}
-                pattern="[0-9]{10}"
-                maxLength="3"
               ></input>
             </div>
           </div>
