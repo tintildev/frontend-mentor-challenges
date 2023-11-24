@@ -50,12 +50,14 @@ const Form = (props) => {
       setCardCVC("e.g. 123");
       props.cvcHandler("e.g. 123");
     }
-    
+  };
 
+  const submitChange = (event) =>{
+    props.submitHandler(true);
   };
 
   return (
-    <form className="form">
+    <form className="form" onSubmit={submitChange}> 
       <div className="form__div">
         <label className="form__label">Cardholder Name</label>
         <input
@@ -121,7 +123,7 @@ const Form = (props) => {
           </div>
         </div>
       </div>
-      <button type="submit" className="form__button">
+      <button type="submit" className="button">
         Confirm
       </button>
     </form>

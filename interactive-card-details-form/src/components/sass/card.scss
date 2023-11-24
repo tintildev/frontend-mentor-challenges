@@ -1,31 +1,61 @@
 .card {
+  display: grid;
+    grid-template-columns: 2vw repeat(6, 1fr) 2vw;
+    grid-template-rows: repeat(6, 5vh) 1vh;
+    grid-gap: 1.5rem;
+
+  &__Img {
+    grid-row: 1 / 6;
+    grid-column: 1 / -1;
+
+    & img{
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+
   &__Front {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-
-    grid-row: 3/5;
-    grid-column: 2/5;
+    grid-row: 4/7;
+    grid-column: 2/7;
     z-index: 2;
+    background-repeat: round;
+    background-size: auto;
 
+    display: grid;
+    grid-template-areas:  "logo none none"
+                          "data data data";
     padding: 1rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
 
-    position: relative;
+    @media screen and (min-width: 1100px){
+      grid-row: 2/3;
+      grid-column: 2/5;
+      padding-left: 1vw;
+      padding-top: 8vh;
+    }
 
     &--logo {
-      width: 15vw;
+      width: 12vw;
+      height: auto;
+      grid-area: logo;
+      
     }
 
     &--data {
+      grid-area: data;
       color: var(--color-White);
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       flex-wrap: nowrap;
       align-items: center;
-
-      width: 100%;
-      height: 10vh;
+      
     }
 
     &--details {
@@ -54,32 +84,40 @@
   }
 
   &__Back {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    grid-row: 2/5;
+    grid-column: 3/8;
+    background-repeat: round;
+    background-size: auto;
 
-    grid-row: 2/4;
-    grid-column: 3/6;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas: "none none none"
+                          "test1 test1 test1"
+                          "test test data"
+                          "test2 test2 test2";
+
+
+    @media screen and (min-width: 1100px){
+      grid-row: 4/5;
+      grid-column: 3/6;
+      z-index: 2;
+    }
 
     &--CVC {
-      width: 100%;
-      height: 100%;
+      grid-area: data;
       color: var(--color-White);
-      text-align: right;
-      line-height: 166px;
-      padding-right: 30px;
+      text-align: center;
       letter-spacing: 1px;
-      font-size: 12px;
+      font-size: 18px;
+      @media screen and (min-width: 1100px){
+        line-height: 265px;
+        padding-right: 50px;
+      }
     }
   }
 
-  &--Holder {
-    background-color: var(--color-Very-dark-violet);
-    display: grid;
-    grid-template-rows: 4vh 88px 80px 80px;
-    grid-template-columns: 4vw 15vw 33.5vw 26.5vw 16vw;
-    height: 30vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  
 }
