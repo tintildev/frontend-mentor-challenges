@@ -1,18 +1,17 @@
-.Main {
-  display: flex;
-  flex-direction: column;
+main section {
+  display: grid;
+  grid-template-areas:  "card"
+                        "form"
+                        "footer";
 
-  & section{
-    display: flex;
-    flex-direction: column;
-
-    @media screen and (min-width: 1100px){
-      flex-direction: row;
-    }
-  }
+  @media screen and (min-width: 800px) { 
+    grid-template-areas:  "card form"
+                          "footer footer";
+  }          
 }
 
 .form {
+  grid-area: form;
   background: white;
   padding: 1rem;
 

@@ -1,50 +1,53 @@
 .card {
+  grid-area: card;
   display: grid;
-    grid-template-columns: 2vw repeat(6, 1fr) 2vw;
-    grid-template-rows: repeat(6, 5vh) 1vh;
-    grid-gap: 1.5rem;
+  grid-template-columns: 2vw repeat(6, 1fr) 2vw;
+  grid-template-rows: repeat(6, 5vh) 1vh;
+  grid-gap: 1.5rem;
+
+  @media screen and (min-width: 800px) {
+    grid-template-columns: repeat(6, 20%);
+    grid-template-rows: repeat(10, 10%);
+  }
 
   &__Img {
     grid-row: 1 / 6;
     grid-column: 1 / -1;
-
-    & img{
+    & img {
       width: 100%;
       height: 100%;
       max-width: 100%;
       display: block;
     }
-  }
 
+    @media screen and (min-width: 800px) {
+      grid-row: 1/-1;
+      grid-column: 1/5;
+    }
+  }
 
   &__Front {
     grid-row: 4/7;
     grid-column: 2/7;
     z-index: 2;
-    background-repeat: round;
-    background-size: auto;
+
+    @media screen and (min-width: 800px) {
+      grid-row: 3/6;
+      grid-column: 2/6;
+    }
 
     display: grid;
-    grid-template-areas:  "logo none none"
-                          "data data data";
+    grid-template-areas:
+      "logo none none"
+      "data data data";
     padding: 1rem;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    
-
-    @media screen and (min-width: 1100px){
-      grid-row: 2/3;
-      grid-column: 2/5;
-      padding-left: 1vw;
-      padding-top: 8vh;
-    }
+    background-repeat: round;
+    background-size: auto;
 
     &--logo {
       width: 12vw;
       height: auto;
       grid-area: logo;
-      
     }
 
     &--data {
@@ -55,7 +58,6 @@
       justify-content: space-around;
       flex-wrap: nowrap;
       align-items: center;
-      
     }
 
     &--details {
@@ -89,20 +91,17 @@
     background-repeat: round;
     background-size: auto;
 
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
     display: grid;
-    grid-template-areas: "none none none"
-                          "test1 test1 test1"
-                          "test test data"
-                          "test2 test2 test2";
+    grid-template-areas:
+      "none none none"
+      "test1 test1 test1"
+      "test test data"
+      "test2 test2 test2";
 
-
-    @media screen and (min-width: 1100px){
-      grid-row: 4/5;
-      grid-column: 3/6;
+    @media screen and (min-width: 800px) {
+      grid-row: 6/9;
+      grid-column: 3/7;
+  
       z-index: 2;
     }
 
@@ -112,12 +111,10 @@
       text-align: center;
       letter-spacing: 1px;
       font-size: 18px;
-      @media screen and (min-width: 1100px){
+      @media screen and (min-width: 1100px) {
         line-height: 265px;
         padding-right: 50px;
       }
     }
   }
-
-  
 }
