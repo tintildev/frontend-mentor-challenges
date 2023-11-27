@@ -8,9 +8,14 @@
 
   @media screen and (min-width: 900px) {
     grid-template-columns: 10% 5% 45% 10% 5%;
-    grid-template-rows: 25% 30% 30% 5%;
+    grid-template-rows: 25% 25% 25% 5% 15%;
     height: auto;
-    width: 40vw;
+    
+    grid-gap: 1rem;
+  }
+
+  @media screen and (min-width: 1000px) {
+    max-width: 28rem;
   }
 
   &__Img {
