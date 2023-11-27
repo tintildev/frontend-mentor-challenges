@@ -52,7 +52,7 @@ const Main = (props) => {
                 yy={cardYY}
               ></CardFront>
             </Card>
-            <Confirm></Confirm>
+            <Confirm submitHandler={submitHandler}></Confirm>
           </section>
         </main>
 

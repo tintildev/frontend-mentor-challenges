@@ -4,7 +4,7 @@ main section {
                         "form";
                         
 
-  @media screen and (min-width: 800px) { 
+  @media screen and (min-width: 900px) { 
     grid-template-areas:  "card form";
   }          
 }
@@ -17,16 +17,18 @@ section{
   grid-area: form;
   background: white;
   padding: 1rem;
+  margin-top: 4rem;
 
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
-  @media screen and (min-width: 800px){
+  @media screen and (min-width: 900px){
     justify-content: center;
     align-items: center;
-    width: 70vw;
+    width: 55vw;
     padding-left: 10vw;
+    margin-top: 0px;
   }
 
   &__label {
@@ -46,7 +48,7 @@ section{
     padding: 1rem;
     margin-top: 0.5rem;
 
-    @media screen and (min-width: 800px){
+    @media screen and (min-width: 900px){
       width: 420px;
     }
 
@@ -63,14 +65,14 @@ section{
       color: var(--color-Light-grayish-violet);
       padding: 1rem;
 
-      @media screen and (min-width: 800px){
+      @media screen and (min-width: 900px){
         width: 100%;
       }
 
       &--right{
         width: 42vw;
 
-        @media screen and (min-width: 800px){
+        @media screen and (min-width: 900px){
           width: 100%;
         }
       }
@@ -85,7 +87,7 @@ section{
       width: 45vw;
       //margin-right: 1rem;
 
-      @media screen and (min-width: 800px){
+      @media screen and (min-width: 900px){
         width: 200px;
       }
     }
@@ -104,14 +106,14 @@ section{
   height: 3rem;
   font-size: var(--default-Font-size);
 
-  @media screen and (min-width: 800px){
+  @media screen and (min-width: 900px){
     width: 420px;
   }
 
   &__confirm{
     width: 90vw;
 
-    @media screen and (min-width: 800px){
+    @media screen and (min-width: 900px){
       width: 420px;
     }
   }
