@@ -47,8 +47,11 @@
 - Mobile-first workflow
 - JavaScript
 
-## Author
 
-- Website - [Martin Klestil](https://github.com/mklestil)
-- Frontend Mentor - [@mklestil](https://www.frontendmentor.io/profile/mklestil)
-- Twitter - [@mklestil](https://twitter.com/MKlestil)
+## Author TintilDev
+- Website - [TintilDev](https://github.com/tintildev)
+- Frontend Mentor - [Tintildev](https://www.frontendmentor.io/profile/tintildev)
+- Bluesky - [@tintildev‬](https://bsky.app/profile/tintildev.bsky.social)
+- LinkedIn - [Martin Klestil](https://www.linkedin.com/in/martin-klestil/)
+- Dev.to [TintilDev](https://dev.to/tintildev)
+
